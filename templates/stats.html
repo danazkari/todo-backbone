@@ -1,0 +1,9 @@
+<div id="stats">
+    <b><%= remaining %></b> <%= remaining == 1? 'item' : 'items' %> left, <b><%= done %></b> completed.
+    <% if(goto) { %>
+    <a href="<%= goto.url %>"><%= goto.title %></a>
+    <% } %>
+</div>
+<% if(done) { %>
+    <a id="clear-completed"><i class="icon-trash"></i> Clear completed items</a>
+<% } %>
